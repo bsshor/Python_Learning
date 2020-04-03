@@ -1,0 +1,279 @@
+﻿----------------------- Page 1-----------------------
+
+Research on Encryption Algorithm Based on Python
+Zhang Xin
+College of Information Science and Engineering, Henan
+University of Technology
+Zhengzhou, Henan, China, 450001
+yimachengxin@163.com
+Zhang Dexian
+Grain Information Processing and Control, Key
+Laboratory of Ministry of Education,
+Zhengzhou, Henan, China, 450001
+zdx@haut.edu.cn
+Abstract—With the rise of Python language in these years,
+more and more developers start to use Python language to do
+researches. Python language has its own advantage on
+Encryption algorithm. This paper discusses the principles of
+Caesar Cipher, Simple Substitution Cipher and Vigenere
+Cipher and their operating process based on Python, then
+concludes the characteristics and disadvantages of these
+Encryption algorithms from security and efficiency. It points
+out their applicable range, and in the end, forecasts the future
+of the Encryption algorithm based on Python.
+Keywords-Encryption algorithm; Caesar Cipher; Simple
+Substitution Cipher; Vigenere Cipher
+I. INTRODUCTION
+As a carrier of resources and communication,
+information is universal, sharing, value-added, rational and
+multi-effect, which is of special significance to the
+development of human society. Information security is a
+problem that must be paid attention by any country,
+government, sector and industry. It is a national security
+strategy that cannot be ignored. One of the main attributes of
+information security is confidentiality. Cryptography studies
+how to transform information in a hidden way and prevent
+others from getting it.
+As a high-level programming language, Python has
+become a popular language in the field of programming
+with its simplicity, readability and extensibility, and has
+become the first choice for data scientists. The Python
+language provides a large number of built-in data structures
+and functions that are very convenient for data science
+programs[1]. With the development of the Internet and the
+presentation of big data, the security of data is becoming
+more and more difficult to guarantee, and the value of data
+is gradually increasing. In recent years, a variety of
+encryption algorithms have been proposed[2-6], in which
+the encryption algorithm of image and video encryption
+algorithm have been applied in many practical
+applications[7-17]. This paper combines Python language
+technology and encryption algorithm to study the encryption
+algorithm based on Python, focusing on the characteristics
+and scope of each algorithm based on Python.
+II. RESEARCH OF ENCRYPTION
+A. Caesar Cipher
+Caesar cipher uses keys to encrypt messages in different
+ways depending on the key. The keys of the Caesar cipher
+are integers from 0 to 25. Even if Caesar cipher is used in
+advance, there is not enough information to decipher the
+password. The key is the must. In cryptography, the Caesar
+cipher is the simplest and most widely known encryption
+technique. It is a replacement for encryption, and all letters in
+the plaintext are replaced by a fixed number of letters
+backwards (or forwards) on the alphabet. For example, when
+the offset is 5, all the letters A will be replaced by F, B
+becomes G, and so on. The Caesar cipher is usually used as a
+step in other more complex encryption methods. The Caesar
+cipher is also used in the modern ROT13 system. But like all
+encryption technologies that use the alphabet to replace, the
+Caesar cipher is very easy to be cracked, and it cannot
+guarantee communication security in practical applications
+or maintain the integrity of the specifications
+The template is used to format paper and style the text.
+All margins, column widths, line spaces, and text fonts are
+prescribed; please do not alter them. The peculiarities are
+noted. For example, the head margin in this template is
+measured proportionately unlike by the customary. This
+measurement and others are deliberate, using specifications
+that anticipate your paper as one part of the entire
+proceedings, and not as an independent document. Please do
+not revise any of the current designations.
+B. Simple Substitution ciper
+The simple substitution cipher, also known as
+monoalphabetic cipher. A character in a plaintext is replaced
+by a corresponding ciphertext character, and the characters
+used in the ciphertext and the characters used in the general
+plaintext belong to the same language system. The simple
+substitution cipher can effectively resist violent deciphering.
+Even if a computer can test 106 keys per second, it will take
+12 million years to test each key.
+C. Vigenere Cipher
+People expand the multiple table ciphers on the basis of
+the Caesar cipher, it is called the Vigenere cipher. The
+Vigenere cipher is similar to the Caesar cipher, except for the
+use of multiple keys. Because it uses more than one set of
+586
+2017 International Conference on Computer Technology, Electronics and Communication (ICCTEC)
+978-1-5386-5784-3/17/31.00 ©2017 IEEE
+DOI 10.1109/ICCTEC.2017.00132
+----------------------- Page 2-----------------------
+
+substitutions, it is also called a polyalphabetic substitution
+cipher. In the Vigenere cipher, the sender and the recipient
+must use the same keyword or the same text section, it is the
+key. The key word or the letter in word section tells them
+how to change the location of the letter before and after to
+get the correct corresponding position of each letter in the
+paragraph.
+III. EXPERIMENTAL ENVIRONMENT AND EXPERIMENTAL
+METHOD
+The experimental environment information is shown in
+Table 1. The experiment is divided into two groups. One
+tests the same ciphertext, and another one tests the different
+ciphertext. The test was done eight times.
+TABLE 1 EXPERIMENTAL ENVIRONMENT
+Computer Version Acer Aspire E5-571G
+Operating System Window 7 64-bit Ultimate
+CPU
+Intel(R) Core(TM) i5-5200U
+CPU @2.20 GHz
+Memory 8.00 GB
+Mainboard Acer EA50_HB
+Developing Plateform Python 3.6 (64-bit)
+Programming Language Python
+The same ciphertext message is “This is my secret
+message!” the second encrypted message is “This is my
+secret message! This is my secret message!” and so on.
+The different ciphertext message is “I am happy to join
+with you today in what will go down in history as the
+greatest demonstration for freedom in the history of our
+nation. Five score years ago, a great American, in whose
+symbolic shadow we stand today”. The first experiment
+selected the first 22 characters, the second experiment
+selected the first 44 characters, and so on.
+Track the encrypted run time using Python code
+statements and record all test run times.
+IV. ANALYSIS OF EXPERIMENTAL RESULTS
+Figure 1 is the result of the same ciphertext encryption
+experiment, and Figure 2 is the result of the different
+ciphertext encryption experiment.
+0 1 2 3 4 5 6 7 8 9
+0.0000
+0.0002
+0.0004
+0.0006
+0.0008
+0.0010
+0.0012
+0.0014
+0.0016
+Time/s
+Data Number
+Caesar
+Simple Substitution
+Vigenere
+Figure 1 Encrypted time of the same ciphertext
+0 1 2 3 4 5 6 7 8 9
+0.00008
+0.00010
+0.00012
+0.00014
+0.00016
+0.00018
+0.00020
+0.00022
+0.00024
+0.00026
+Time/s
+Data Numbers
+Caesar
+Simple Substitution
+Vigenere
+Figure 2 Encrypted time of the different ciphertext
+In this experiment condition, as can be seen from Figure
+1, when encrypting the same ciphertext, the Caesar Cipher
+takes less time than the Simple Substitution Cipher and the
+Vigenere Cipher. The Simple Substitution Cipher is similar
+to the time used by the Vigenere Cipher. As can be seen
+from Figure 2, the time used by Caesar Cipher and the
+Simple Substitution Cipher increases with the number of
+ciphertext. But the time used by the Vigenere Cipher is more
+stable. This result is related to the principle of each
+encryption algorithm.
+The experimental results show that the length of time
+spent on encryption is related to the content of encryption.
+And encrypting different content takes less time than
+encrypting the same content ciphertext.
+V. CONCLUSIONS
+Through the principle of each encryption algorithms and
+related experiments. Comparison of three encryption
+algorithms, as shown in Table 2.
+TABLE 2 CONTRAST OF ENCRYPTION ALGORITHM
+Encryption
+Algorithm
+Time Security Realization
+Caesar Cipher Short Low Easy
+Simple
+Substitution
+Cipher
+Long Middle Difficult
+Vigenere
+Cipher
+Middle High Middle
+To sum up, the time used to encrypt the same ciphertext
+and the different ciphertext are different. When encrypting
+the same ciphertext, the Caesar Cipher takes less time than
+the Simple Substitution Cipher and the Vigenere Cipher.
+When encrypting the different ciphertext, the time used by
+Caesar Cipher and the Simple Substitution Cipher increases
+with the number of ciphertext. The time used by the
+Vigenere Cipher is more stable.
+The implementation of Caesar Cipher is simple and the
+operation time is short, but its security is low. It is suitable
+for encrypting non-important documents. The Simple
+Substitution Cipher runs for a long time, difficult to realize,
+587
+----------------------- Page 3-----------------------
+
+but with high security. It is suitable for encrypting ordinary
+documents. However, the Vigenere Cipher runs for a short
+time, easy to realize, and with high security. It is suitable for
+encrypting important documents. In addition, Python is easy
+to implement data encryption and operate, which will play a
+greater role in future research of encryption algorithms.
+REFERENCES
+[1] FANG Yanfeng, LIU Dan. Python Data Science
+Cookbook[M].Beijing: POSTS & TELECOM PRESS, 2016: 2.
+[2] ZHANG Shun, GAO Tiegang. Encryption Based on DNA Coding,
+Codon Grouping and Substitution [J]. Journal of Electronics &
+Information Technology, 2015, 37(1): 150-157.
+[3] YANG Kang, YUAN Hailong, GUO Yuanbo. A Research on
+Attribute-based Hierarchical Encryption of Two-dimensional Code
+[J/OL]. [2017-06-20].
+http://kns.cnki.net/kcms/detail/31.1289.TP.20170620.1435.008.html.
+[4] CHEN Zhigang, WANG Jian, SONG Xinxia. Survey on fully
+homomorphic encryption [J]. Application Research of Computers,
+2014, 31(6): 1624-1631.
+[5] LI Shundong, DOU Jiawei, WANG Daoshun. Survey on
+Homomorphic Encryption and Its Applications to Cloud Security [J].
+Journal of Computer Research and Development, 2015, 52(6): 1378-
+1388.
+[6] ZHAO Zhiyuan, WANG Jianhua, ZHU Zhiqiang, SUN Lei. Survey
+of attribute-based encryption in cloud storage environment [J/OL].
+2018,35(4). [2017-08-17]. http://www.arocmag.com/article/02-2018-
+04-068.html.
+[7] LU Huibin, WANG Lijia. Color Image Encryption Algorithm of
+Chaotic Based on the Hopfield Network [J] . Journal of Jilin
+University (Information Science Edition), 2014, 32(2): 131-137.
+[8] ZHANG Yonghong, ZHANG Bo. Algorithm of image encrypting
+based on Logistic chaotic system [J] . Application Research of
+Computers, 2015, 32(6): 1770-1773.
+[9] YAN Bing, BAI Sen, LIU Bowen, YANG Yi, GUO Hui. Algorithm
+of image encryption in wavelet domain based on cross chaotic map
+[J/OL]. [2017-06-14]. http://www.arocmag.com/article/02-2018-06-
+031.html.
+[10] LIU Xiaoyong, CAO Yiping, LU Pei. Research on Optical Image
+Encryption Technique with Compressed Sensing[J]. ACTA OPTICA
+SINICA, 2014, 34(3): 0307002.
+[11] WEN Changci, WANG Qin, MIAO Xiaoning, LIU Xianghong,
+PENG Yangxiang. Digital Image Encryption: A Survey [J]. Computer
+Science, 2012, 39(12): 6-9,24.
+[12] HAN Chao, WAN Rui, LIU Yang, WANG Fengsui. A Double
+Encryption Algorithm Research Based on Computer Generated
+Hologram [J]. Chinese Journal of Lasers, 2015, 42(9): 0909001.
+[13] WANG Hongwei, QIN Jun, LIU Fu, LENG Zhiguang. Video optical
+encryption technology research based on double chaos [J/OL]. [2017-
+01-19]. http://www.arocmag.com/article/02-2018-01-049.html.
+[14] LIAN Shiguo, SUN Jinsheng, WANG Zhiquan. Quality Analysis of
+Several Typical MPEG Video Encryption Algorithms [J]. Journal of
+Image and Graphics, 2004, 9(4): 483-490.
+[15] LIAN Shiguo, SUN Jinsheng, WANG Zhiqua. Video encryption and
+Its Development [J]. Information and Control, 2004, 33(5): 560-566.
+[16] MEI Jingjin, ZHANG Rong, HU Yang. A Scalable Encryption
+Scheme for Video [J]. Journal of Image and Graphics, 2006, 11(10):
+1400-1404.
+[17] CHEN Jixiang, WANG Xiaogang. Nonlinear Double Images
+Encryption Based on Double Random Phase Encoding [J]. ACTA
+OPTICA SINICA, 2014, 34(7): 0710001.
+588
