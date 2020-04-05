@@ -34,7 +34,7 @@ for i in '2345678':
         break
     days += data[i]
 days = days - 16 + int(day)
-print(days)
+# print(days)
 
 b = days % 7
 if b != 0 :
