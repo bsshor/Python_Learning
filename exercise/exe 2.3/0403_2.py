@@ -14,3 +14,20 @@
 日志的内容,随便定义: "加法被执行了"
 
 """
+
+
+def outer(func):
+    def wrapper(*args):
+        print("加法被执行了")
+        func(*args)
+
+    return wrapper
+
+
+@outer
+def add(x, z):
+    print(x+z)
+
+
+add(1, 6)
+
