@@ -56,9 +56,6 @@ def outer(func):
         print("验证成功!")
         return inner
     
-        
-
-
 @outer
 def a():
     print(12345)

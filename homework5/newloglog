@@ -31,3 +31,21 @@ ZeroDivisionError: division by zero
     print(100/n)
 ZeroDivisionError: division by zero
 
+2020-04-09 01:17:56,635  - INFO - None
+2020-04-09 01:17:56,637  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 43, in inner
+    result = func(*args, **kwargs)  # 第2层
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 61, in B
+    print(100/n)
+ZeroDivisionError: division by zero
+
+2020-04-09 01:17:56,637  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 43, in inner
+    result = func(*args, **kwargs)  # 第2层
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 61, in B
+    print(100/n)
+ZeroDivisionError: division by zero
+
+2020-04-09 01:17:56,639  - INFO - None
+2020-04-09 01:17:56,639  - INFO - None
+2020-04-09 01:17:56,639  - INFO - None

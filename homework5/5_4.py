@@ -26,7 +26,6 @@ def outer(func):
         return result
     return wrapper
 
-
 @outer
 def A():
     for n in range(2, 20001):
