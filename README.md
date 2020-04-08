@@ -10,3 +10,10 @@ For Python study
 
 ### 2020.04.05
 更新exercise 和 homework4
+
+### 2020.04.08
+
+1.更新exercise
+
+2.提交homework5
+
