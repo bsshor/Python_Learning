@@ -1,0 +1,33 @@
+2020-04-09 01:02:46,053  - INFO - None
+2020-04-09 01:02:46,055  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 76, in inner
+    result = func(*args, **kwargs)  # 2
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 94, in test2
+    print(100/n)
+ZeroDivisionError: division by zero
+
+2020-04-09 01:02:46,055  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 76, in inner
+    result = func(*args, **kwargs)  # 2
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 94, in test2
+    print(100/n)
+ZeroDivisionError: division by zero
+
+2020-04-09 01:02:46,056  - INFO - None
+2020-04-09 01:02:46,056  - INFO - None
+2020-04-09 01:02:46,056  - INFO - None
+2020-04-09 01:09:34,206  - INFO - None
+2020-04-09 01:09:34,208  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 43, in inner
+    result = func(*args, **kwargs)  # 第2层
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 61, in B
+    print(100/n)
+ZeroDivisionError: division by zero
+
+2020-04-09 01:09:34,208  - ERROR - Traceback (most recent call last):
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 43, in inner
+    result = func(*args, **kwargs)  # 第2层
+  File "g:/桌面/Python_Learning/homework5/5_2.py", line 61, in B
+    print(100/n)
+ZeroDivisionError: division by zero
+
