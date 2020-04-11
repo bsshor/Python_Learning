@@ -1,4 +1,4 @@
-#!G:\Python_Homeworks\venv\Scripts\python.exe
+#!G:\×ÀÃæ\Python_Learning\venv\Scripts\python.exe -x
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3'
 __requires__ = 'pip==19.0.3'
 import re

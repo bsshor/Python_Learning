@@ -1,4 +1,4 @@
-#!G:\Python_Homeworks\venv\Scripts\python.exe
+#!G:\×ÀÃæ\Python_Learning\venv\Scripts\python.exe -x
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==40.8.0','console_scripts','easy_install'
 __requires__ = 'setuptools==40.8.0'
 import re
