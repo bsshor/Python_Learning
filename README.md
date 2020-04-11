@@ -17,3 +17,10 @@ For Python study
 
 2.提交homework5
 
+### 2020.04.11
+
+1.更新venv
+
+2.更新5_3.py
+
+3.提交homework6（未全完成）
