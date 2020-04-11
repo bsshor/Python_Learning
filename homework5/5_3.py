@@ -20,7 +20,7 @@ def outer(func):
 
     status = False
     try:
-        with open(r'homework5\account.txt', 'r', encoding='utf-8') as fr:
+        with open(r'G:\桌面\Python_Learning\homework5\account.txt', 'r', encoding='utf-8') as fr:
             texts = []
             text = fr.readline().split()
             while text:
@@ -31,8 +31,8 @@ def outer(func):
         print(e)
 
     dit = {}
-    for text in texts:
-        dit[text[0]] = text[1]
+    for i in texts:
+        dit[i[0]] = i[1]
 
     print(dit)
     # 支持验证三次账号,三次都验证失败则退出
@@ -55,6 +55,8 @@ def outer(func):
     if status:
         print("验证成功!")
         return inner
+    else :
+        return None
     
 @outer
 def a():
@@ -64,8 +66,8 @@ def a():
 a()
 
 @outer
-def b(a, b):
-    return a * b
+def b(x, y):
+    return x * y
 
 
 print(b(12, 3))
