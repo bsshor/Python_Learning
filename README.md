@@ -32,3 +32,16 @@ For Python study
 2.更新venv
 
 3.更新homework6（已完成）
+
+
+## 2020.04.21
+1.更新exercise
+
+
+## 2020.04.25
+
+1.提交homework7
+
+2.更新venv
+
+3.更新pycharm配置
