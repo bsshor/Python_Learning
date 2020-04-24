@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@File : 7.1.py
-@Time : 2020/4/21 17:43:23 
+@File : 7_1.py
+@Time : 2020/4/19 17:43:23 
 @Author : Bundchen 
 @Version : 1.0
 @Contact : 1476193741@qq.com
@@ -30,4 +30,3 @@ try:
 
 except Exception as e:
     print(type(e), ':', e)
-

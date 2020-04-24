@@ -9793,7 +9793,7 @@ INSERT INTO `temp_icp_web` VALUES ('9792', '67251', '码通天下（北京）科
 INSERT INTO `temp_icp_web` VALUES ('9793', '67253', '北京国能赢创能源信息技术有限公司', 'http://www.gev.org.cn');
 INSERT INTO `temp_icp_web` VALUES ('9794', '67260', '北京蜂尚科技有限公司', 'http://www.zmaimai.com');
 INSERT INTO `temp_icp_web` VALUES ('9795', '67261', '北京金瑞龙房地产咨询顾问有限公司', 'http://www.fhjggj.com');
-INSERT INTO `temp_icp_web` VALUES ('9796', '67285', '北京恒翔永瑞贸易有限公司', 'http://www. fff-automobile.com');
+INSERT INTO `temp_icp_web` VALUES ('9796', '67285', '北京恒翔永瑞贸易有限公司', 'http://www.fff-automobile.com');
 INSERT INTO `temp_icp_web` VALUES ('9797', '67288', '北京绿态美景环保科技有限公司', 'http://www.ycxcjcn.com');
 INSERT INTO `temp_icp_web` VALUES ('9798', '67330', '北京新奥特云视科技有限公司', 'http://www.onairiaas.com');
 INSERT INTO `temp_icp_web` VALUES ('9799', '67338', '北京正固智信科技有限公司', 'http://www.wisinfo.cn');
