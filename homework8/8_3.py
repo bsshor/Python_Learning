@@ -13,6 +13,7 @@
 -对比2：对比开启4个多进程和开启10个多进程两种方法的速度。
 '''
 # here put the import lib
+
 from multiprocessing import Process, Pool, Queue
 import multiprocessing
 import time

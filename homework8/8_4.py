@@ -7,10 +7,9 @@
 @Contact : 1476193741@qq.com
 @Description :  
     编写一个简单的聊天程序；
-    其中一个进程发送文字聊天消息（从键盘输入文字消息）；  
-    另外一个进程接收并打印消息
+其中一个进程发送文字聊天消息（从键盘输入文字消息）；  
+另外一个进程接收并打印消息
 '''
-
 # here put the import lib
 from multiprocessing import Process, Queue
 import os
