@@ -66,3 +66,5 @@ For Python study
 1.统一提交honmwork8和homework9
 
 2.将所有涉及到文件读写时使用绝对路径的代码改为使用相对路径
+
+3.git停止跟踪配置文件和虚拟环境
