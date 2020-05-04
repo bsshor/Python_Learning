@@ -37,8 +37,8 @@ def readtext(path):
 
 
 # 路径
-path1 = r'G:\Python_Learning\homework3\08789108.txt'
-path2 = r'G:\Python_Learning\homework3\08845524.txt'
+path1 = r'homework3\08789108.txt'
+path2 = r'homework3\08845524.txt'
 li1 = readtext(path1)
 li2 = readtext(path2)
 

@@ -19,7 +19,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-with open(r'G:\桌面\Python_Learning\homework7\Url.txt', 'r', encoding='utf-8') as fr:
+with open(r'homework7\Url.txt', 'r', encoding='utf-8') as fr:
     effective = 0  # 经查，第一题中给的很多网址是无效网址，此处用effective记录有效的网址数目，满100退出
     # 为了避免被待爬取网页禁止爬取，增加请求头，模拟浏览器访问
     headers = {
@@ -45,7 +45,7 @@ with open(r'G:\桌面\Python_Learning\homework7\Url.txt', 'r', encoding='utf-8')
                     if 'href' in str(text):  # 判断是否有url，需要转换成字符串类型判断
                         print("href:>>>>", text.attrs['href'])
                         target_url = orign_url.rstrip('/')+'/'+text.attrs['href'].lstrip('/')  # 拼接url
-                        with open(r"G:\桌面\Python_Learning\homework7\Introduction.txt", "a", encoding="utf-8") as fw:
+                        with open(r"homework7\Introduction.txt", "a", encoding="utf-8") as fw:
                             fw.write(target_url+'\n')
 
         except Exception as identifier:

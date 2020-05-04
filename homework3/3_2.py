@@ -14,7 +14,7 @@
 '''
 texts = []
 try:
-    with open('input.txt', 'r', encoding='utf-8') as fr:
+    with open(r'homework3\input.txt', 'r', encoding='utf-8') as fr:
         texts = fr.readlines()
         # print(isinstance(texts,enumerate)
 

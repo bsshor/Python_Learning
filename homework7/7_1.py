@@ -14,7 +14,7 @@
 import re
 
 try:
-    with open(r'G:\桌面\Python_Learning\homework7\webspiderUrl.txt', 'r', encoding='utf-8') as fr:
+    with open(r'homework7\webspiderUrl.txt', 'r', encoding='utf-8') as fr:
         pattern = r'[a-zA-z]+://[^\s$(;|\')]*'  # 匹配所有的网址形式
         line = fr.readline()
         while line:
@@ -22,7 +22,7 @@ try:
             line = fr.readline()
 
             if url:  # 如果查得的url不为空,则逐个写入url列表里的网址
-                with open(r'G:\桌面\Python_Learning\homework7\Url.txt', 'a', encoding='utf-8') as fw:
+                with open(r'homework7\Url.txt', 'a', encoding='utf-8') as fw:
                     i = 0
                     while i < len(url):
                         fw.write(url[i] + '\n')

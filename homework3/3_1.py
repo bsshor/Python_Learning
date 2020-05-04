@@ -34,7 +34,7 @@ while text != '' and (not is_allspace(text)):
     text = input()
 
 try:
-    with open('input.txt', 'w', encoding='utf-8') as fw:
+    with open(r'homework3\input.txt', 'w', encoding='utf-8') as fw:
         fw.write('\n'.join(texts))  # join()拼接字符串，用'\n'拼接是因为input不能
         # 读取换行符，写入文件时需要对输入的换行符进行还原
 except Exception as e:

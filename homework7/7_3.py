@@ -59,7 +59,7 @@ def get_resource(start_url, names):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36'}
     for name in names:
         try:
-            with open(r'G:\桌面\Python_Learning\homework7\MP3\{}'.format(name), 'wb') as fw:
+            with open(r'homework7\MP3\{}'.format(name), 'wb') as fw:
                 target_url = start_url + quote('sc-ad ' + name)  # 转换成超链接
                 # 此处 quote(name) = name.replace(' ', "%20")
                 print(target_url)

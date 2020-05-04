@@ -12,7 +12,7 @@
  然后按照分数从高到低进行排序输出
 """
 try:
-    with open('3_3Scores.txt', 'r', encoding='utf-8') as fr:
+    with open(r'homework3\3_3Scores.txt', 'r', encoding='utf-8') as fr:
         lines = []
         # 去掉每行里的换行符
         for line in fr:

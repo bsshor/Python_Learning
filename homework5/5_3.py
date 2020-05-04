@@ -20,7 +20,7 @@ def outer(func):
 
     status = False
     try:
-        with open(r'G:\桌面\Python_Learning\homework5\account.txt', 'r', encoding='utf-8') as fr:
+        with open(r'homework5\account.txt', 'r', encoding='utf-8') as fr:
             texts = []
             text = fr.readline().split()
             while text:

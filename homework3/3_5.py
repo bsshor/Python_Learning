@@ -13,9 +13,9 @@ import os
 
 # 为避免重复创建，
 # 先判断"Blowing in the wind.txt"指定文件夹下这个文件是否存在，如果没有则创建。
-if not os.path.exists(r'G:\Python_Learning\homework3\Blowing in the wind.txt'):
+if not os.path.exists(r'homework3\Blowing in the wind.txt'):
     try:
-        with open(r'G:\Python_Learning\homework3\Blowing in the wind.txt', 'w', encoding='utf-8') as fw:
+        with open(r'homework3\Blowing in the wind.txt', 'w', encoding='utf-8') as fw:
             string = '''How many roads must a man walk down
 Before they call him a man
 How many seas must a white dove sail
@@ -32,12 +32,12 @@ else:
     print("已存在")
 
 try:
-    with open(r'G:\Python_Learning\homework3\Blowing in the wind.txt', 'r', encoding='utf-8') as fr:
+    with open(r'homework3\Blowing in the wind.txt', 'r', encoding='utf-8') as fr:
 
         lines = fr.readlines()
 
         # 本处用到了嵌套，外层的目的是读取原文本，暂存于lines，内层则是实现对原文本的插入
-        with open(r'G:\Python_Learning\homework3\Blowing in the wind.txt', 'w', encoding='utf-8') as fw:
+        with open(r'homework3\Blowing in the wind.txt', 'w', encoding='utf-8') as fw:
             lines.insert(0, '\tBlowing in the wind   Bob Dylan\n')
             lines.append('\n\t\t\t\t1962 by warner Bros.Inc')
             for line in lines:

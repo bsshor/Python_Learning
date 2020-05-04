@@ -56,7 +56,7 @@ def get_content(links):
             
             #print(re_b)
 
-            with open(r'G:\桌面\Python_Learning\homework7\Exercises and analysis.txt','a',encoding='utf-8') as fw:
+            with open(r'homework7\Exercises and analysis.txt','a',encoding='utf-8') as fw:
                 fw.write(">>>" + dict['title'] + '\n')
                 for text in re_a:
                     con = text.text

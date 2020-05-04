@@ -12,7 +12,7 @@
 """
 import os
 
-path = r'G:\Python_Learning\homework3\img'
+path = r'homework3\img'
 # 获取当前目录下所有的文件，存于列表files中
 files = os.listdir(path)
 
