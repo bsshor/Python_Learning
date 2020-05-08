@@ -11,9 +11,12 @@
 用PyMySQL驱动方式
 '''
 
+import datetime
+
 # here put the import lib
 import pymysql
-import datetime
+
+
 def get_time():
     """
     获取当前日期时间
@@ -24,18 +27,17 @@ def get_time():
 
 
 class database():
-    def __init__(self, host='localhost', user='root', passwd='root',  db='', charset='utf8'):
+    def __init__(self, host='localhost', user='root', passwd='root', db='', charset='utf8'):
         # 建立连接 
-        self.conn = pymysql.connect(host=host,user=user, passwd=passwd, db=db, charset=charset)
+        self.conn = pymysql.connect(host=host, user=user, passwd=passwd, db=db, charset=charset)
         # 创建游标，操作设置为字典类型        
-        self.cursor = self.conn.cursor(cursor = pymysql.cursors.DictCursor)
+        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
 
     def exit(self):
 
         self.cursor.close()
         self.conn.close()
 
-    
     def create(self):
         """
         创建
@@ -53,7 +55,6 @@ CREATE TABLE `my_test`.`message` (
 
         cursor.execute(sql)
 
-
     def append(self):
         """
         增(插)
@@ -70,7 +71,7 @@ CREATE TABLE `my_test`.`message` (
         try:
             # 执行sql语句
             cursor.execute(sql)
-                # 执行sql语句
+            # 执行sql语句
             conn.commit()
         except:
             # 发生错误时回滚
@@ -84,7 +85,7 @@ CREATE TABLE `my_test`.`message` (
         # #>>实践证明,此处既不能关闭游标,也不能关闭数据库连接
         print("留言成功!")
 
-    def search(self,Id = None):
+    def search(self, Id=None):
         """
         查
         """
@@ -92,7 +93,7 @@ CREATE TABLE `my_test`.`message` (
         if Id == None:
             sql = 'SELECT * FROM my_test.message;'
         else:
-            sql = 'SELECT * FROM my_test.message where id = %d;'%Id
+            sql = 'SELECT * FROM my_test.message where id = %d;' % Id
         cursor.execute(sql)
         results = cursor.fetchall()
         # print(results)
@@ -103,10 +104,10 @@ CREATE TABLE `my_test`.`message` (
             message = row['theme']
             name = row['author']
             time = row['time']
-            print('-'*100)
-            print(Id,'  ',time,'    ')
-            print(name,':',message)
-            print('-'*100)
+            print('-' * 100)
+            print(Id, '  ', time, '    ')
+            print(name, ':', message)
+            print('-' * 100)
 
     def update(self):
         """
@@ -117,19 +118,22 @@ CREATE TABLE `my_test`.`message` (
         # theme = input("请输入您要留言的内容:")
         # name = input("请留下您的姓名:")
         # time = get_time()
-        #database.search()
+        # database.search()
         Id = input("请输入您要更新的留言内容的id:")
-        #database.search(Id)
-        theme = input ("请输入您要重新书写的留言内容:")
-        time = get_time()
+        # database.search(Id)
+        theme = input("请输入您要重新书写的留言内容:")
+        # time = get_time()
         # SQL 插入语句
-        sql = """UPDATE `my_test`.`message` SET `theme` = '%s', `time` = '%s' WHERE (`id` = %s);
-""" % (theme, time, Id)
+        # sql = """UPDATE `my_test`.`message` SET `theme` = '%s', `time` = '%s' WHERE (`id` = %s);
+        # """ % (theme, time, Id)
+        # 今天对数据库表属性做了一些修正,让它自动获取数据的提交时间
+        sql = """UPDATE `my_test`.`message` SET `theme` = '%s',  WHERE (`id` = %s);
+""" % (theme, Id)
         # print(sql)
         try:
             # 执行sql语句
             cursor.execute(sql)
-                # 执行sql语句
+            # 执行sql语句
             conn.commit()
         except:
             # 发生错误时回滚
@@ -143,8 +147,8 @@ CREATE TABLE `my_test`.`message` (
         cursor = self.cursor
         conn = self.conn
         Id = input("请输入您要删除留言的id:")
-        #database.search(Id)
-        
+        # database.search(Id)
+
         # SQL 插入语句
         sql = """DELETE  FROM my_test.message Where `id` = %s;
 """ % (Id)
@@ -152,7 +156,7 @@ CREATE TABLE `my_test`.`message` (
         try:
             # 执行sql语句
             cursor.execute(sql)
-                # 执行sql语句
+            # 执行sql语句
             conn.commit()
         except:
             # 发生错误时回滚
@@ -161,13 +165,11 @@ CREATE TABLE `my_test`.`message` (
 
 
 if __name__ == "__main__":
-    db = database(passwd='sbs5218',db= 'my_test')
-    #db.create()
-    #for i in range(10):
+    db = database(passwd='***************', db='my_test')  # 对本人密码保密
+    # db.create()
+    # for i in range(10):
     db.append()
     db.search()
     db.update()
     db.delete()
     db.exit()
-    
-    
