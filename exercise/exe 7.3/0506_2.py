@@ -63,10 +63,10 @@ CREATE TABLE `my_test`.`message` (
         conn = self.conn
         theme = input("请输入您要留言的内容:")
         name = input("请留下您的姓名:")
-        time = get_time()
+        # time = get_time()
         # SQL 插入语句
-        sql = """INSERT INTO `my_test`.`message` (`theme`, `author`, `time`)
-        VALUES (\'%s\',\'%s\',\'%s\');""" % (theme, name, time)
+        sql = """INSERT INTO `my_test`.`message` (`theme`, `author`)
+                VALUES (\'%s\',\'%s\');""" % (theme, name)
         # print(sql)
         try:
             # 执行sql语句
