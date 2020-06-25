@@ -7,5 +7,5 @@
 如果老师运行时发生调包异常，可以采用
 `import os
 import sys
-sys.path.append(os.path.dirname(..)`
+sys.path.append(..)`
 
