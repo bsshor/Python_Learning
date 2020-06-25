@@ -7,7 +7,7 @@
 @Version : 1.0
 @Contact : 1476193741@qq.com
 @Description ：
-
+    均值计算模块
 """
 import Model.model as model
 
